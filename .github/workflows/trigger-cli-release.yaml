@@ -1,9 +1,9 @@
-name: release
+name: Trigger CLI Release
 on:
   release:
     types: [ published ]
 jobs:
-  pypi-release:
+  trigger-cli-release:
     runs-on: ubuntu-latest
     steps:
       - name: Generate App Installation Token
